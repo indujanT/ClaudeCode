@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <Platform>x86</Platform>
+    <Platforms>x86</Platforms>
+    <AssemblyName>SAPB1HelloWorld</AssemblyName>
+    <RootNamespace>SAPB1HelloWorld</RootNamespace>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SAP Business One DI API Reference -->
+    <Reference Include="SAPbobsCOM">
+      <HintPath>C:\Program Files (x86)\SAP\SAP Business One DI API\SAPbobsCOM.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+
+    <!-- SAP Business One UI API Reference -->
+    <Reference Include="SAPbouiCOM">
+      <HintPath>C:\Program Files (x86)\SAP\SAP Business One UI API\SAPbouiCOM.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
